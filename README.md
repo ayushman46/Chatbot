@@ -1,19 +1,28 @@
-# Rule-Based Financial Chatbot
+Project Title: Financial Chatbot Prototype
 
-## Overview
-This is a basic rule-based chatbot built in Python that answers predefined financial queries using company 10-K data (CSV format).
+Objective:
+To develop a simple rule-based chatbot that responds to predefined financial queries based on previously analyzed data from company 10-K reports.
 
-## How it Works
-- The chatbot loads data using pandas
-- It supports a set of predefined queries via if-else logic
-- It returns answers using data from `financial_data.csv`
+Core Features:
+- Rule-based logic using Python `if-else` or dictionary lookup
+- Responds to 3 predefined queries: revenue, net income, and assets
+- Handles unknown queries gracefully with a friendly fallback message
+- Supports case-insensitive input matching
 
-## Supported Queries
-- What is the total revenue of Apple in 2022?
-- What is the net income growth of Tesla?
-- What is the latest total assets of Microsoft?
+How it works:
+The chatbot is written in Python and runs in the terminal. It takes user input, checks if the input matches a predefined financial query, and returns the appropriate response. For any unknown query, the bot replies with a default message.
 
-## Limitations
-- Only predefined questions are supported
-- Does not use machine learning or NLP
-- Only works with specific company-year combinations
+Limitations:
+- Only supports predefined questions
+- No natural language understanding or dynamic data retrieval
+- Cannot parse free-text financial documents
+
+Tools Used:
+- Python (Standard Library)
+- (Optional) pandas for structured data reading (not implemented in this prototype)
+
+Next Steps:
+In future iterations, the chatbot can be expanded to support:
+- NLP-based query parsing
+- Data fetching from CSV or live APIs
+- Dynamic response generation based on user intent
